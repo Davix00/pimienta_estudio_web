@@ -7,6 +7,7 @@ const About = () => {
         voluptatem quibusdam consequatur sint modi cumque porro recusandae quis,
         corporis dolorem nostrum sequi. Quia soluta at odit aliquam cum laborum.
       </span>
+   
     </div>
   );
 };

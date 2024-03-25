@@ -2,10 +2,10 @@ const Carrousel = () => {
   return (
     <div className="containerCarrousel">
       <img className="carrouselImage" src="" alt="imagen" />
-      <button className="btnCarrouse" onClick={prevImage}>
+      <button className="btnCarrouse" >
         Anterior
       </button>
-      <button className="btnCarrouse" onClick={nextImage}>
+      <button className="btnCarrouse" >
         Siguiente
       </button>
     </div>
