@@ -14,7 +14,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   
   const content = <>
-      <div className="2xl:hidden block absolute top-28 w-full left-0 right-0  bg-primary transition">
+      <div className="2xl:hidden block absolute -mt-5 top-28 py-10 w-full left-0 right-0  bg-primary transition z-50">
         <ul className="text-center text-xl p-5">
           <Link spy={true} smooth={true} to="Nosotros">
             <li className="text-white my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Nosotros</li>
@@ -33,11 +33,11 @@ const Navbar = () => {
   </>
   
   return (
-    /**Contenido que se mostrará primero */
+    /**Contenido que se mostrará */
     <nav>
       <div className="bg-white h-10vh flex justify-between z-50 text-primary lg:py-5 px-3 py-4 flex-1">
         <div className="flex items-center flex-1">
-          <span  className="w-60 " >
+          <span  className="w-60 -mt-4 " >
             <img src={logoVerde} alt="logo" />
           </span>
         </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
         <div>
           {click && content}
         </div>
-        <button className="block 2xl:hidden transition size-20" onClick={handleClick}>
+        <button className=" block 2xl:hidden transition size-20 mr-20" onClick={handleClick}>
           {click ? <FaTimes /> : <TiThMenu />}
         </button>
       </div>

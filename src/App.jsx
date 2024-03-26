@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-// import Carousel from "./components/Carrousel";
+import Carousel from "./components/Carrousel";
 // import About from "./components/About";
 // import Clientes from "./components/Clients";
 // import Services from "./components/Services";
@@ -10,7 +10,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      {/* <Carousel />
+      <Carousel />
+
+      {/* 
       <About />
       <Clientes />
       <Services />
