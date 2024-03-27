@@ -10,44 +10,40 @@ const About = () => {
   return (
     <div className="about">
       <Parallax className="-mt-20" strength={600} bgImage={fondo}>
-        <div className="content" style={{ height: "100vh" }}>
+        <div className="content flex flex-col md:flex-row" style={{ minHeight: "100vh" }}>
 
-          <h1 className="text-primary font-bold text-center text-3xl tracking-wider">
-            NOSOTROS
-          </h1>
+          <div className="mx-6 md:mx-36 md:w-1/2 md:pr-12">
+            <h1 className="text-primary font-bold text-center md:text-left text-3xl tracking-wider md:ml-96">
+              NOSOTROS
+            </h1>
 
-          <h1 className="text-primary">
-            <AiOutlineLine className="w-full" />
-          </h1>
+            <h1 className="text-primary md:ml-96">
+              <AiOutlineLine className="w-full" />
+            </h1>
 
-          <div className="text-slate-600 p-3 mx-auto h-7" style={{fontFamily:"Poppins, sans-serif",width:"500px"}}>
-            Somos una agencia de publicidad que a parte de desarrollar servicios
-            de diseño gráfico, diseño páginas web, marketing y comunicación,
-            somos impulsores de cambios que generen bien común. Con un espíritu
-            inconformista abierto a una nueva realidad más humana y
-            sostenible.Trabajamos en base a unos códigos éticos de honestidad y
-            responsabilidad con las personas y el medio ambiente.
+            <div className="text-slate-600 p-3 md:mx-6 max-w-3xl" style={{ fontFamily: "Poppins, sans-serif" }}>
+              Somos una agencia de publicidad que, además de desarrollar servicios de diseño gráfico, diseño de páginas web, marketing y comunicación, somos impulsores de cambios que generen bien común. Con un espíritu inconformista abierto a una nueva realidad más humana y sostenible. Trabajamos en base a unos códigos éticos de honestidad y responsabilidad con las personas y el medio ambiente.
+            </div>
+
+            <br/>
+
+            <div className="text-slate-600 -mt-6 p-3 md:mx-6 max-w-3xl" style={{ fontFamily: "Poppins, sans-serif" }}>
+              Trabajar desde una gestión horizontal, siendo la transparencia, la auto-responsabilidad, la confianza y solidaridad los pilares que fundamentan esta empresa. Queremos ser referentes en cuanto a la comunicación ética y responsable. Colaborando y creando sinergias con otras entidades que, siguiendo con nuestra filosofía, quieran cambiar el mundo hacia la consciencia, responsabilidad y cooperación.
+            </div>
           </div>
 
-          <br/>
-
-          <div className="text-slate-600 mt-40  p-3 w-96  mx-auto h-7 " style={{fontFamily:"Poppins, sans-serif",width:"500px"}}>
-            Trabajar desde una gestión horizontal, siendo la trasparencia, la
-            auto-responsabilidad, la confianza y solidaridad los pilares que
-            fundamentan esta empresa, queremos ser referentes en cuanto a la
-            comunicación ética y responsable. Colaborando y creando sinergias
-            con otras entidades que siguiendo con nuestra filosofía quieran
-            cambiar el mundo hacia la consciencia, responsabilidad y cooperación.
+          <div className="md:w-1/2 mt-8 md:mt-24 md:-mx-28 mx-auto max-w-xs">
+            <img src={lucky} alt="Imagen" className="w-full" />
           </div>
-
-          <div className="xl:size-50 -mt-20" style={{marginLeft:"950px",marginTop:"-110px",width:"300px"}}>
-            <img src={lucky}></img>
-          </div>
+          
         </div>
       </Parallax>
-      <div style={{height:"100vh"}}></div>
+      <div style={{ minHeight: "100vh" }}></div>
     </div>
   );
 };
+
+
+
 
 export default About;
