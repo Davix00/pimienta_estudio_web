@@ -9,11 +9,11 @@ import lucky from "../assets/fondoParallax/lucky.png";
 const About = () => {
   return (
     <div className="about">
-      <Parallax className="-mt-20" strength={600} bgImage={fondo}>
-        <div className="content flex flex-col md:flex-row" style={{ minHeight: "100vh" }}>
+      <Parallax className="-mt-20" strength={600} bg-white>
+        <div className="content flex flex-col md:flex-row" >
 
           <div className="mx-6 md:mx-36 md:w-1/2 md:pr-12">
-            <h1 className="text-primary font-bold text-center md:text-left text-3xl tracking-wider md:ml-96">
+            <h1 className="text-primary font-bold text-center md:text-left text-3xl tracking-wider md:ml-96 ">
               NOSOTROS
             </h1>
 
@@ -38,7 +38,7 @@ const About = () => {
           
         </div>
       </Parallax>
-      <div style={{ minHeight: "100vh" }}></div>
+      <div style={{ minHeight: "-60vh" }}></div>
     </div>
   );
 };
