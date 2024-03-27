@@ -47,7 +47,7 @@ const Carrousel = () => {
   return (
     <div className="max-w-[1440px] h-[780px] w-90 m-auto  py-10 px-4 relative group" style={{ top: '-60px', height: '500px', width: '100%' }}>
       
-      <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-full bg-center bg-cover ">
+      <div style={{backgroundImage: `url(${slides[currentIndex].url})`,transition: "background-image 0.5s ease-in-out"}} className="w-full h-full bg-center bg-cover slide-transition">
       </div>
       {/**Flecha derecha */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black-20 text-white cursor-pointer">
