@@ -14,7 +14,7 @@ const Clients = () => {
         </div>
 
         <div
-          className="text-center text-slate-600 p-5 md:max-w-3xl"
+          className="italic font-semibold text-center text-slate-600 p-5 md:max-w-4xl"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           Nadie sabe lo que quiere hasta que se lo enseñas. Pues cuándo un

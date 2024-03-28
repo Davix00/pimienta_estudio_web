@@ -1,28 +1,18 @@
+import { AiOutlineLine } from "react-icons/ai";
+
 const Services = () => {
   return (
     <div className="servicesContainer">
-      <h1>SERVICIOS</h1>
-      <div className="servicesLogo">
-        <span>
-          <img src="" alt="" />
-          Diseño de logotipo e identidad gráfica.
-        </span>
-        <span>
-          <img src="" alt="" />
-          Impresión digital y offset.
-        </span>
-        <span>
-          <img src="" alt="" />
-          Diseño editorial.
-        </span>
-        <span>
-          <img src="" alt="" />
-          Páginas web.
-        </span>
-        <span>
-          <img src="" alt="" />
-          Medios publicitarios.
-        </span>
+      <div className="mx-auto mt-5 md:w-1/2 lg:max-w-4xl ">
+        <h1 className="text-primary font-bold text-center text-3xl tracking-wider ">
+          SERVICIOS
+        </h1>
+
+        <div className="text-primary flex justify-center">
+          <AiOutlineLine className="w-full" />
+        </div>
+
+        
       </div>
     </div>
   );
