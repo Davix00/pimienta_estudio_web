@@ -4,6 +4,7 @@ import Carousel from "./components/Carrousel";
 import About from "./components/About";
 import Clientes from "./components/Clients";
 import Services from "./components/Services";
+import Contact from "./components/Contact"
 // import Footer from "./components/Footer";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Clientes />
       <Services />
+      <Contact/>
       {/* 
       
       
