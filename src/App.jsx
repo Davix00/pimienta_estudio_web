@@ -5,7 +5,7 @@ import About from "./components/About";
 import Clientes from "./components/Clients";
 import Services from "./components/Services";
 import Contact from "./components/Contact"
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,11 +16,8 @@ const App = () => {
       <Clientes />
       <Services />
       <Contact/>
-      {/* 
-      
-      
-      <span className="contactDataText">Datos de contacto.</span>
-      <Footer /> */}
+      <Footer />
+
     </>
   );
 };
