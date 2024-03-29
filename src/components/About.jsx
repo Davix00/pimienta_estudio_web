@@ -8,7 +8,7 @@ import lucky from "../assets/fondoParallax/lucky.png";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <Parallax className="-mt-20" strength={600} bg-white>
         <div className="content flex flex-col md:flex-row" >
 
