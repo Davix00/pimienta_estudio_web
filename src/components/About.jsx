@@ -3,14 +3,21 @@
 }
 import { Parallax } from "react-parallax";
 import { AiOutlineLine } from "react-icons/ai";
-import fondo from "../assets/fondoParallax/fondoParallax.jpg";
 import lucky from "../assets/fondoParallax/lucky.png";
+import { motion } from "framer-motion";
+//variantes
+import {fadeIn} from './variants';
 
 const About = () => {
   return (
     <div className="about" id="about">
       <Parallax className="-mt-20" strength={600} bg-white>
-        <div className="content flex flex-col md:flex-row" >
+        <motion.div
+          variants={fadeIn("up",0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once:false,amount:0.7}}
+         className="content flex flex-col md:flex-row" >
 
           <div className="mx-6 md:mx-36 md:w-1/2 md:pr-12">
             <h1 className="text-primary font-bold text-center md:text-left text-3xl tracking-wider md:ml-96 ">
@@ -36,7 +43,7 @@ const About = () => {
             <img src={lucky} alt="Imagen" className="w-full" />
           </div>
           
-        </div>
+        </motion.div>
       </Parallax>
       <div style={{ minHeight: "-60vh" }}></div>
     </div>
