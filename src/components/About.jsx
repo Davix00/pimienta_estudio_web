@@ -11,7 +11,7 @@ import {fadeIn} from './variants';
 const About = () => {
   return (
     <div className="about" id="about">
-      <Parallax className="-mt-20" strength={600} bg-white>
+      <Parallax className="-mt-5" strength={600} bg-white>
         <motion.div
           variants={fadeIn("up",0.2)}
           initial="hidden"
