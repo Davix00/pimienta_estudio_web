@@ -5,7 +5,7 @@ import { Parallax } from "react-parallax";
 import { AiOutlineLine } from "react-icons/ai";
 import lucky from "../assets/fondoParallax/lucky.png";
 import { motion } from "framer-motion";
-//variantes
+//variantes para efectos
 import {fadeIn} from './variants';
 
 const About = () => {
