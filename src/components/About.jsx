@@ -1,5 +1,5 @@
 {
-  /**Impototación de parallax**/
+  /**Importación de parallax**/
 }
 import { Parallax } from "react-parallax";
 import { AiOutlineLine } from "react-icons/ai";

@@ -6,6 +6,7 @@ import Clientes from "./components/Clients";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ContactoEstudio from "./components/ContactoEstudio";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Clientes />
         <Services/>
         <Contact/>
+        <ContactoEstudio/>
         <Footer />
       </div>
  

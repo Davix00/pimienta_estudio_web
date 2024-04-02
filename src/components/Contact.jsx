@@ -94,7 +94,7 @@ const Contact = () => {
                 className=" border-slate-600 border ml-7 lg:ml-7 lg:w-96"
               />
             </div>
-            <button type="submit" className="bg-primary text-white px-6 h-7 text-center mx-auto lg:mx-auto mt-4 lg:mt-0 block hover:font-bold">Enviar</button>
+            <button type="submit" className="bg-primary text-white px-6 h-7 text-center mx-auto lg:mx-auto lg:mt-0 block hover:font-bold">Enviar</button>
           </form>
           <br/>
         </div>
