@@ -1,32 +1,26 @@
-import React from "react";
-//import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
+//import emailjs from "emailjs-com";
 import { AiOutlineLine } from "react-icons/ai";
-import { useState } from "react";
 
 const Contactanos = () => {
-  // Estado local para almacenar los datos del formulario
-  const [formData, setFormData] = useState({
-    nombre: "",
-    email: "",
-    mensaje: "",
-  });
+  const form = useRef();
 
-  // Función para manejar el cambio en los campos del formulario
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_gh0wkyl", "template_ytz3rq6", form.current, {
+        publicKey: "eQwJyf6I_L-KywGgy",
+      })
+      .then(
+        () => {
+          console.log("EXITO!");
+        },
+        (error) => {
+          console.log("ERROR...", error.text);
+        }
+      );
   };
-
-  // Función para manejar el envío del formulario
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí puedes enviar formData a tu backend o hacer lo que necesites con los datos
-    console.log(formData);
-  };
-
   return (
     <div className="clientsContainer" id="contact">
       <div className="mx-auto mt-12 md:w-1/2 lg:max-w-4xl ">
@@ -46,20 +40,18 @@ const Contactanos = () => {
         </div>
 
         <div className="ml-10 lg:ml-16">
-          <form onSubmit={handleSubmit} className="ml-2 lg:ml-4">
+          <form ref={form} onSubmit={sendEmail} className="ml-2 lg:ml-4">
             <div>
               <label
-                htmlFor="nombre"
+                htmlFor="name"
                 className="text-slate-600 font-bold text-xl"
               >
                 Nombre:
               </label>
               <input
                 type="text"
-                id="nombre"
-                name="nombre"
-                value={formData.nombre}
-                onChange={handleChange}
+                id="name"
+                name="user_name"
                 required
                 className=" border-slate-600 border ml-7 lg:ml-7 lg:w-96"
               />
@@ -74,26 +66,22 @@ const Contactanos = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
+                name="user_email"
                 required
                 className=" border-slate-600 border ml-14 lg:ml-14 lg:w-96"
               />
             </div>
             <div className="mt-4">
               <label
-                htmlFor="mensaje"
+                htmlFor="message"
                 className="text-slate-600 font-bold text-xl -mt-10"
               >
                 Mensaje:
               </label>
               <textarea
-                id="mensaje"
-                name="mensaje"
+                id="message"
+                name="message"
                 rows="4"
-                value={formData.mensaje}
-                onChange={handleChange}
                 required
                 className=" border-slate-600 border ml-7 lg:ml-7 lg:w-96"
               />
