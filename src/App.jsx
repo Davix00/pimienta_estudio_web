@@ -4,25 +4,22 @@ import Carousel from "./components/Carrousel";
 import About from "./components/About";
 import Clientes from "./components/Clients";
 import Services from "./components/Services";
-import Contact from "./components/Contact";
+import ContactUs from "./components/Contactanos";
 import Footer from "./components/Footer";
-import ContactoEstudio from "./components/ContactoEstudio";
-
+import Info from "./components/Info";
 
 const App = () => {
   return (
-  
-      <div>
-        <Navbar />
-        <Carousel />
-        <About/>
-        <Clientes />
-        <Services/>
-        <Contact/>
-        <ContactoEstudio/>
-        <Footer />
-      </div>
- 
+    <div>
+      <Navbar />
+      <Carousel />
+      <About />
+      <Clientes />
+      <Services />
+      <ContactUs />
+      <Info />
+      <Footer />
+    </div>
   );
 };
 
