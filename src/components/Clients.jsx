@@ -6,44 +6,50 @@ const Image = ({ src }) => {
   return <img src={src} alt="image" />;
 };
 
-// Componente de Cuadricula de imágenes.
-const ImageGrid = ({ images }) => {
-  const [currentPage, setCurrentPage] = useState(0);
-  const imagesPerPage = 10;
-  const totalPages = Math.ceil(images.length / imagesPerPage);
-
-  // Función para ir a la siguiente página de la cuadrícula.
-  const nextPage = () => {
-    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages - 1));
-  };
-
-  // Función para ir a la página anterior de la cuadrícula.
-  const prevPage = () => {
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 0));
-  };
-
-  // Calcular el índice de inicio y fin de las imágenes en la página actual
-  const startIndex = currentPage * imagesPerPage;
-  const endIndex = Math.min(startIndex + imagesPerPage, images.length);
+const ImageGrid = ({ images, goToSlide, currentIndex }) => {
+  // Dividir las imágenes en grupos de 10
+  const imageGroups = [];
+  for (let i = 0; i < images.length; i += 10) {
+    imageGroups.push(images.slice(i, i + 10));
+  }
 
   return (
-    <div>
-      <div className="image-grid">
-        {images.slice(startIndex, endIndex).map((image, index) => (
-          <Image key={index} src={image.path} />
+    <div className="image-grid">
+      <div className="flex justify-center">
+        <div className="flex flex-wrap">
+          {/* Renderizar las imágenes */}
+          {imageGroups[currentIndex].map((image, index) => (
+            <div key={index} className="w-1/5 p-2">
+              <Image src={image.path} />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="text-white flex top-4 justify-center">
+        {/* Renderizar los botones de bolita */}
+        {imageGroups.map((_, groupIndex) => (
+          <div
+            key={groupIndex}
+            onClick={() => goToSlide(groupIndex)}
+            className={`text-2xl cursor-pointer ${
+              groupIndex === currentIndex ? "text-blue-500" : "text-gray-500"
+            }`}
+          >
+            •
+          </div>
         ))}
       </div>
-      <button onClick={prevPage} disabled={currentPage === 0}>
-        Anterior
-      </button>
-      <button onClick={nextPage} disabled={currentPage === totalPages - 1}>
-        Siguiente
-      </button>
     </div>
   );
 };
 
 const Clients = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
   return (
     <div className="clientsContainer" id="clients">
       <div className="mx-auto mt-5 md:w-1/2 lg:max-w-4xl ">
@@ -60,7 +66,11 @@ const Clients = ({ images }) => {
           Nadie sabe lo que quiere hasta que se lo enseñas. Pues cuándo un
           diseño no se siente con el corazón, no importa lo que diga la cabeza.
         </div>
-        <ImageGrid images={images} />
+        <ImageGrid
+          images={images}
+          goToSlide={goToSlide}
+          currentIndex={currentIndex}
+        />
       </div>
     </div>
   );
