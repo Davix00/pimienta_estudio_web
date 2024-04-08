@@ -75,6 +75,7 @@ const Carrousel = ({ images }) => {
           </div>
         ))}
       </div>
+      <br />
     </div>
   );
 };

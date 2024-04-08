@@ -1,4 +1,3 @@
-//**Importacion de iconos, logo y estados */
 import { useState } from "react";
 import { Link } from "react-scroll";
 import logoVerde from "../assets/logo/logoverde.png";

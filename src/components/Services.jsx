@@ -52,7 +52,7 @@ const Services = () => {
               />
             </div>
             <p className="font-semibold text-slate-800 mt-2 text-center w-20">
-            Diseño editorial
+              Diseño editorial
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Services = () => {
               />
             </div>
             <p className="font-semibold text-slate-800 mt-2 text-center w-36">
-            Páginas Web
+              Páginas Web
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const Services = () => {
               />
             </div>
             <p className="font-semibold text-slate-800 mt-2 text-center w-32">
-            Medios publicitarios
+              Medios publicitarios
             </p>
           </div>
         </div>

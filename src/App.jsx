@@ -4,7 +4,7 @@ import Carousel from "./components/Carrousel";
 import About from "./components/About";
 import Clientes from "./components/Clients";
 import Services from "./components/Services";
-import ContactUs from "./components/Contactanos";
+import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Info from "./components/Info";
 

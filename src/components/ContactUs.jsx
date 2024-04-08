@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
-import "./modal.css";
+import "./Modal.css";
 const ContactUs = () => {
   const form = useRef();
   const [modalVisible, setModalVisible] = useState(false);
@@ -33,6 +33,7 @@ const ContactUs = () => {
 
   return (
     <div className="clientsContainer" id="contact">
+      <br />
       <div className="mx-auto mt-12 md:w-1/2 lg:max-w-4xl ">
         <h1 className="text-primary font-bold text-center text-3xl tracking-wider ">
           CONTACTO
@@ -120,6 +121,7 @@ const ContactUs = () => {
           </div>
         </div>
       )}
+      <br />
     </div>
   );
 };

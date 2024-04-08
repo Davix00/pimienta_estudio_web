@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
-import "./clients.css";
+import "./Clients.css";
 // Componente de imagen.
 const Image = ({ src }) => {
   return <img src={src} alt="image" />;
@@ -52,6 +52,8 @@ const Clients = ({ images }) => {
 
   return (
     <div className="clientsContainer" id="clients">
+      <br />
+      <br />
       <div className="mx-auto mt-5 md:w-1/2 lg:max-w-4xl ">
         <h1 className="text-primary font-bold text-center text-3xl tracking-wider ">
           HECHO EN CASA
@@ -72,6 +74,8 @@ const Clients = ({ images }) => {
           currentIndex={currentIndex}
         />
       </div>
+      <br />
+      <br />
     </div>
   );
 };
