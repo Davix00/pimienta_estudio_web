@@ -1,0 +1,49 @@
+.image-grid {
+  /* Ajustar el tamaño del contenedor de la cuadrícula de imágenes */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-grid .flex {
+  /* Centrar horizontalmente las imágenes */
+  justify-content: center;
+}
+
+.image-grid .flex-wrap {
+  /* Ajustar el espacio entre las imágenes */
+  gap: 20px;
+}
+
+.image-grid .text-white {
+  /* Alinear los botones de navegación en el centro */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-grid .text-white .text-2xl {
+  /* Estilizar los botones de navegación */
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.image-grid .text-white .text-blue-500 {
+  /* Estilizar el botón de navegación activo */
+  color: #003d4c;
+}
+
+.image-grid .text-white .text-gray-500 {
+  /* Estilizar los botones de navegación inactivos */
+  color: gray;
+}
+
+.image-grid .flex-wrap .w-1\/5 {
+  /* Establecer el ancho de cada imagen en un 20% */
+  width: 20%;
+}
+
+.image-grid .flex-wrap .w-1\/5 img {
+  /* Hacer que las imágenes ocupen todo el espacio disponible */
+  width: 100%;
+  height: auto;
+}

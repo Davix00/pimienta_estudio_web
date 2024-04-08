@@ -1,7 +1,7 @@
 //**Importacion de iconos, logo y estados */
 import { useState } from "react";
 import { Link } from "react-scroll";
-import logoVerde from "../assets/Logos/logoverde.png";
+import logoVerde from "../assets/logo/logoverde.png";
 import { FaTimes } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
@@ -13,7 +13,9 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
-    {/**Elementos navbar */}
+  {
+    /**Elementos navbar */
+  }
   const navItems = [
     { link: "Nosotros", path: "about" },
     { link: "Hecho en casa", path: "clients" },
@@ -63,9 +65,7 @@ const Navbar = () => {
                   <RiInstagramFill />
                 </a>
               </li>
-              
             </ul>
-            
           </div>
         </div>
         {/* Menu para dispositivos moviles */}
