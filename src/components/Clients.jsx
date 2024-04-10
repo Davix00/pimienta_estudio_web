@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
-import "./Clients.css";
+import "./clients.css";
 
 // Componente de imagen.
 const Image = ({ src }) => {
