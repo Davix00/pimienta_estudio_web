@@ -1,38 +1,46 @@
 import React, { useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import "./Clients.css";
+
 // Componente de imagen.
 const Image = ({ src }) => {
   return <img src={src} alt="image" />;
 };
 
 const ImageGrid = ({ images, goToSlide, currentIndex }) => {
-  // Dividir las imágenes en grupos de 10
-  const imageGroups = [];
-  for (let i = 0; i < images.length; i += 10) {
-    imageGroups.push(images.slice(i, i + 10));
-  }
+  // Definir la cantidad de imágenes por fila
+  const imagesPerRow = 5;
+
+  // Calcular la cantidad total de filas
+  const totalRows = Math.ceil(images.length / (imagesPerRow * 2));
+
+  // Obtener el índice de inicio y fin para las imágenes a mostrar
+  const startIndex = currentIndex * imagesPerRow * 2;
+  const endIndex = Math.min(startIndex + imagesPerRow * 2, images.length);
+  const currentImages = images.slice(startIndex, endIndex);
 
   return (
     <div className="image-grid">
-      <div className="flex justify-center">
-        <div className="flex flex-wrap">
-          {/* Renderizar las imágenes */}
-          {imageGroups[currentIndex].map((image, index) => (
-            <div key={index} className="w-1/5 p-2">
-              <Image src={image.path} />
-            </div>
-          ))}
-        </div>
+      <div className="flex flex-wrap">
+        {/* Renderizar las imágenes */}
+        {currentImages.map((image, index) => (
+          <div
+            key={index}
+            className="w-1/5 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 p-2"
+            style={{ width: "100%", height: "auto" }}
+          >
+            <Image src={image.path} />
+          </div>
+        ))}
       </div>
       <div className="text-white flex top-4 justify-center">
-        {/* Renderizar los botones de bolita */}
-        {imageGroups.map((_, groupIndex) => (
+        {/* Renderizar los botones */}
+        {Array.from({ length: totalRows }).map((_, row) => (
           <div
-            key={groupIndex}
-            onClick={() => goToSlide(groupIndex)}
+            key={row}
+            onClick={() => goToSlide(row)}
             className={`text-2xl cursor-pointer ${
-              groupIndex === currentIndex ? "text-blue-500" : "text-gray-500"
+              row === currentIndex ? "text-blue-500" : "text-gray-500"
             }`}
           >
             •
