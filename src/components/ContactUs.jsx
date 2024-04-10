@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
-import "./Modal.css";
+import "./ContactUs.css";
 const ContactUs = () => {
   const form = useRef();
   const [modalVisible, setModalVisible] = useState(false);
@@ -44,19 +44,16 @@ const ContactUs = () => {
         </div>
 
         <div
-          className="text-center text-slate-600 p-5 md:max-w-4xl"
-          style={{ fontFamily: "Poppins, sans-serif" }}
+          className="italic font-semibold text-center text-slate-600 p-5 md:max-w-4xl"
+          style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.3rem" }}
         >
           Mándanos un mensaje, estaremos felices de atenderte.
         </div>
 
         <div className="ml-10 lg:ml-16">
           <form ref={form} onSubmit={sendEmail} className="ml-2 lg:ml-4">
-            <div>
-              <label
-                htmlFor="nombre"
-                className="text-slate-600 font-bold text-xl"
-              >
+            <div className="input-group">
+              <label htmlFor="nombre" className="input-label">
                 Nombre:
               </label>
               <input
@@ -64,14 +61,11 @@ const ContactUs = () => {
                 id="nombre"
                 name="user_name"
                 required
-                className=" border-slate-600 border ml-7 lg:ml-7 lg:w-96"
+                className="input-field"
               />
             </div>
-            <div className="mt-4">
-              <label
-                htmlFor="email"
-                className="text-slate-600 font-bold text-xl"
-              >
+            <div className="input-group">
+              <label htmlFor="email" className="input-label">
                 Email:
               </label>
               <input
@@ -79,15 +73,11 @@ const ContactUs = () => {
                 id="email"
                 name="user_email"
                 required
-                className=" border-slate-600 border ml-14 lg:ml-14 lg:w-96"
+                className="input-field"
               />
             </div>
-
-            <div className="mt-4">
-              <label
-                htmlFor="mensaje"
-                className="text-slate-600 font-bold text-xl -mt-10"
-              >
+            <div className="input-group">
+              <label htmlFor="mensaje" className="input-label">
                 Mensaje:
               </label>
               <textarea
@@ -95,14 +85,10 @@ const ContactUs = () => {
                 name="message"
                 rows="4"
                 required
-                className=" border-slate-600 border ml-7 lg:ml-7 lg:w-96"
+                className="input-field"
               />
             </div>
-            <button
-              type="submit"
-              value="Send"
-              className="bg-primary text-white px-6 h-7 text-center mx-auto lg:mx-auto lg:mt-0 block hover:font-bold"
-            >
+            <button type="submit" value="Send" className="submit-button">
               Enviar
             </button>
           </form>

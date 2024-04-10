@@ -7,18 +7,12 @@ const Info = () => {
         <div className="text-primary flex justify-center">
           <AiOutlineLine className="w-full" />
         </div>
-
-        <div
-          className=" font-semibold text-center text-slate-600 p-5 md:max-w-4xl"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          Teléfono:
-          <span className="font-light mx-2">2224810329</span>
-        </div>
         <div
           className=" font-semibold text-center text-slate-600 p-5 md:max-w-4xl -my-4"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
+          Teléfono
+          <span className="font-light mx-2">2224810329</span>
           Instagram:
           <span className="font-light mx-2">@pimientaestudio</span>
         </div>

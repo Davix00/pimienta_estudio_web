@@ -27,7 +27,7 @@ const ImageGrid = ({ images, goToSlide, currentIndex }) => {
           <div
             key={index}
             className="w-1/5 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 p-2"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "130%", height: "auto" }}
           >
             <Image src={image.path} />
           </div>
@@ -70,8 +70,8 @@ const Clients = ({ images }) => {
           <AiOutlineLine className="w-full" />
         </div>
         <div
-          className="italic font-semibold text-center text-slate-600 p-5 md:max-w-4xl"
-          style={{ fontFamily: "Poppins, sans-serif" }}
+          className="text-center text-slate-600 p-5 md:max-w-4xl"
+          style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.3rem" }}
         >
           Nadie sabe lo que quiere hasta que se lo enseñas. Pues cuándo un
           diseño no se siente con el corazón, no importa lo que diga la cabeza.
