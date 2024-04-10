@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.text-slate-600 {
+  color: black !important;
+}
+
 .image-grid .flex {
   /* Centrar horizontalmente las imágenes */
   justify-content: center;

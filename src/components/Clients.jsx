@@ -7,7 +7,7 @@ const Image = ({ src }) => {
   return <img src={src} alt="image" />;
 };
 
-const ImageGrid = ({ images, goToSlide, currentIndex }) => {
+export const ImageGrid = ({ images, goToSlide, currentIndex }) => {
   // Definir la cantidad de imágenes por fila
   const imagesPerRow = 5;
 

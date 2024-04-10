@@ -44,7 +44,7 @@ const ContactUs = () => {
         </div>
 
         <div
-          className="italic font-semibold text-center text-slate-600 p-5 md:max-w-4xl"
+          className="italic text-center text-slate-600 p-5 md:max-w-4xl"
           style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.3rem" }}
         >
           Mándanos un mensaje, estaremos felices de atenderte.

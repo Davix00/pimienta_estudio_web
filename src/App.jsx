@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Info from "./components/Info";
+import Colavorations from "./components/Colavorations";
 
 const carouselPath = "../src/assets/carousel/";
 const imagesCarousel = [
@@ -67,6 +68,36 @@ const imagesClients = [
   { path: `${clientsPath}ZARAGOZA.svg` },
 ];
 
+const colavorationsPath = "../src/assets/colavorations/";
+const imagesColavorations = [
+  { path: `${colavorationsPath}adagio.svg` },
+  { path: `${colavorationsPath}arquidiocesis.svg` },
+  { path: `${colavorationsPath}carls.svg` },
+  { path: `${colavorationsPath}ciep.svg` },
+  { path: `${colavorationsPath}cisneros.svg` },
+  { path: `${colavorationsPath}cristo rey.svg` },
+  { path: `${colavorationsPath}cristobal.svg` },
+  { path: `${colavorationsPath}cuple.svg` },
+  { path: `${colavorationsPath}dominicas.svg` },
+  { path: `${colavorationsPath}escudo arquidiocesis.svg` },
+  { path: `${colavorationsPath}haus.svg` },
+  { path: `${colavorationsPath}haz tu loko.svg` },
+  { path: `${colavorationsPath}hscj.svg` },
+  { path: `${colavorationsPath}kids&us.svg` },
+  { path: `${colavorationsPath}kiwi.svg` },
+  { path: `${colavorationsPath}la chinata.svg` },
+  { path: `${colavorationsPath}lupemaurer.svg` },
+  { path: `${colavorationsPath}niño docor.svg` },
+  { path: `${colavorationsPath}ogcm.svg` },
+  { path: `${colavorationsPath}pastoral social.svg` },
+  { path: `${colavorationsPath}san hipolito.svg` },
+  { path: `${colavorationsPath}san miguel.svg` },
+  { path: `${colavorationsPath}seminairo menor.svg` },
+  { path: `${colavorationsPath}seminario palafoxiano.svg` },
+  { path: `${colavorationsPath}sonata.svg` },
+  { path: `${colavorationsPath}transmisiones.svg` },
+  { path: `${colavorationsPath}vocaciones.svg` },
+];
 const App = () => {
   return (
     <div>
@@ -74,6 +105,7 @@ const App = () => {
       <Carousel images={imagesCarousel} />
       <About />
       <Clientes images={imagesClients} />
+      <Colavorations images={imagesColavorations} />
       <Services />
       <ContactUs />
       <Info />
