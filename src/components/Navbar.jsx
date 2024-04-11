@@ -18,8 +18,9 @@ const Navbar = () => {
   const navItems = [
     { link: "Nosotros", path: "about" },
     { link: "Hecho en casa", path: "clients" },
-    { link: "Servicios", path: "services" },
-    { link: "Contacto", path: "contact" },
+    { link: "Colaboraciones", path: "collaborations" },
+    { link: "Nuestros servicios", path: "services" },
+    { link: "Contactanos", path: "contact" },
   ];
 
   return (
@@ -115,7 +116,10 @@ const Navbar = () => {
           )}
         </div>
         {/* Boton de menu desplegable */}
-        <button className="lg:hidden transition size-20 " onClick={handleClick}>
+        <button
+          className="lg:hidden transition size-20 flex justify-end items-center"
+          onClick={handleClick}
+        >
           {click ? <FaTimes /> : <TiThMenu />}
         </button>
       </div>

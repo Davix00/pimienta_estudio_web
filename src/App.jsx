@@ -7,13 +7,12 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Info from "./components/Info";
-import Colavorations from "./components/Colavorations";
+import Collaborations from "./components/Collaborations";
 import {
   imagesCarousel,
   imagesClients,
   imagesColavorations,
 } from "../imagesPath";
-
 const App = () => {
   return (
     <div>
@@ -21,7 +20,7 @@ const App = () => {
       <Carousel images={imagesCarousel} />
       <About />
       <Clientes images={imagesClients} />
-      <Colavorations images={imagesColavorations} />
+      <Collaborations images={imagesColavorations} />
       <Services />
       <ContactUs />
       <Info />

@@ -2,7 +2,6 @@ import { Parallax } from "react-parallax";
 import { AiOutlineLine } from "react-icons/ai";
 import lucky from "../assets/fondoParallax/lucky.png";
 import { motion } from "framer-motion";
-//variantes para efectos
 import { fadeIn } from "./variants";
 
 const About = () => {
@@ -10,7 +9,7 @@ const About = () => {
     <div className="about" id="about">
       <Parallax className="-mt-5" strength={600} bg-white>
         <motion.div
-          variants={fadeIn("up", 0.2)}
+          variants={fadeIn("up")}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}

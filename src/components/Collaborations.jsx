@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import { ImageGrid } from "./Clients";
-import "./clients.css";
+import "./css/Clients.css";
 
 const Image = ({ src }) => {
   return <img src={src} alt="image" />;
 };
 
-const Colavorations = ({ images }) => {
+const Collaborations = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToSlide = (slideIndex) => {
@@ -15,10 +15,13 @@ const Colavorations = ({ images }) => {
   };
 
   return (
-    <div className="clientsContainer" id="clients">
+    <div className="clientsContainer" id="collaborations">
       <br />
       <br />
-      <div className="mx-auto mt-5 md:w-1/2 lg:max-w-4xl ">
+      <div
+        className="mx-auto mt-5 md:w-1/2 lg:max-w-4xl"
+        style={{ fontSize: "1.5rem", padding: "0 10px" }}
+      >
         <h1 className="text-primary font-bold text-center text-3xl tracking-wider ">
           NUESTRAS COLABORACIONES
         </h1>
@@ -46,4 +49,4 @@ const Colavorations = ({ images }) => {
   );
 };
 
-export default Colavorations;
+export default Collaborations;

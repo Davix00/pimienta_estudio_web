@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
-import "./ContactUs.css";
+import "./css/ContactUs.css";
 const ContactUs = () => {
   const form = useRef();
   const [modalVisible, setModalVisible] = useState(false);
@@ -32,74 +32,73 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="clientsContainer" id="contact">
-      <br />
-      <div className="mx-auto mt-12 md:w-1/2 lg:max-w-4xl ">
-        <h1 className="text-primary font-bold text-center text-3xl tracking-wider ">
-          CONTACTO
-        </h1>
+    <div
+      className="clientsContainer mx-auto mt-12 md:w-full lg:max-w-4xl"
+      id="contact"
+    >
+      <h1 className="text-primary font-bold text-center text-3xl tracking-wider ">
+        CONTACTO
+      </h1>
 
-        <div className="text-primary flex justify-center">
-          <AiOutlineLine className="w-full" />
-        </div>
-
-        <div
-          className="italic text-center text-slate-600 p-5 md:max-w-4xl"
-          style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.3rem" }}
-        >
-          Mándanos un mensaje, estaremos felices de atenderte.
-        </div>
-
-        <div className="ml-10 lg:ml-16">
-          <form ref={form} onSubmit={sendEmail} className="ml-2 lg:ml-4">
-            <div className="input-group">
-              <label htmlFor="nombre" className="input-label">
-                Nombre:
-              </label>
-              <input
-                type="text"
-                id="nombre"
-                name="user_name"
-                required
-                className="input-field"
-              />
-            </div>
-            <div className="input-group">
-              <label htmlFor="email" className="input-label">
-                Email:
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="user_email"
-                required
-                className="input-field"
-              />
-            </div>
-            <div className="input-group">
-              <label htmlFor="mensaje" className="input-label">
-                Mensaje:
-              </label>
-              <textarea
-                id="mensaje"
-                name="message"
-                rows="4"
-                required
-                className="input-field"
-              />
-            </div>
-            <button type="submit" value="Send" className="submit-button">
-              Enviar
-            </button>
-          </form>
-          <br />
-        </div>
+      <div className="text-primary flex justify-center">
+        <AiOutlineLine className="w-full" />
       </div>
 
+      <div className="italic text-center text-slate-600 p-5 md:max-w-4xl">
+        Mándanos un mensaje, estaremos felices de atenderte.
+      </div>
+
+      <div className="form-container mx-auto mt-12 md:w-full lg:max-w-4xl ">
+        <form ref={form} onSubmit={sendEmail} className="ml-2 lg:ml-4">
+          <div className="input-group flex flex-col md:flex-row">
+            <label htmlFor="nombre" className="input-label md:w-1/5">
+              Nombre:
+            </label>
+            <input
+              type="text"
+              id="nombre"
+              name="user_name"
+              required
+              className="input-field md:w-4/5"
+            />
+          </div>
+          <div className="input-group flex flex-col md:flex-row">
+            <label htmlFor="email" className="input-label md:w-1/5">
+              Email:
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="user_email"
+              required
+              className="input-field md:w-4/5"
+            />
+          </div>
+          <div className="input-group flex flex-col md:flex-row">
+            <label htmlFor="mensaje" className="input-label md:w-1/5">
+              Mensaje:
+            </label>
+            <textarea
+              id="mensaje"
+              name="message"
+              rows="4"
+              required
+              className="input-field md:w-4/5"
+            />
+          </div>
+          <button
+            type="submit"
+            value="Send"
+            className="submit-button md:w-auto md:ml-1/5"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
       {/* Modal */}
       {modalVisible && (
         <div className="modal">
-          <div className="modal-content">
+          <div className="modal-content items-center">
             <span className="close" onClick={closeModal}>
               &times;
             </span>

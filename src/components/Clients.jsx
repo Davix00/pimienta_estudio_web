@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
-import "./clients.css";
+import "./css/Clients.css";
 
 // Componente de imagen.
 const Image = ({ src }) => {
@@ -26,8 +26,8 @@ export const ImageGrid = ({ images, goToSlide, currentIndex }) => {
         {currentImages.map((image, index) => (
           <div
             key={index}
-            className="w-1/5 sm:w-1/5 md:w-1/5 lg:w-1/5 xl:w-1/5 p-2"
-            style={{ width: "130%", height: "auto" }}
+            className="w-full sm:w-1/3 md:w-1/5 lg:w-1/5 xl:w-1/5 p-2"
+            style={{ width: "100%", height: "auto" }}
           >
             <Image src={image.path} />
           </div>
@@ -62,7 +62,10 @@ const Clients = ({ images }) => {
     <div className="clientsContainer" id="clients">
       <br />
       <br />
-      <div className="mx-auto mt-5 md:w-1/2 lg:max-w-4xl ">
+      <div
+        className="mx-auto mt-5 md:w-1/2 lg:max-w-4xl"
+        style={{ fontSize: "1.5rem", padding: "0 10px" }}
+      >
         <h1 className="text-primary font-bold text-center text-3xl tracking-wider ">
           HECHO EN CASA
         </h1>
