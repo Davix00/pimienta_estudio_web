@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
 const Carrousel = ({ images }) => {
-  // Recibe las imágenes como prop
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Avanzar automáticamente al siguiente slide cada 3 segundos
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentIndex]);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -24,7 +34,7 @@ const Carrousel = ({ images }) => {
 
   return (
     <div
-      className="max-w-[1440px] h-[780px] w-90 m-auto py-10 px-4 relative group"
+      className="carrusel-container max-w-[1440px] h-[780px] w-90 m-auto py-10 px-4 relative group"
       style={{ top: "-50px", height: "620px", width: "100%" }}
     >
       <div className="w-full h-full relative overflow-hidden">
@@ -35,22 +45,17 @@ const Carrousel = ({ images }) => {
             transition: "transform 0.5s ease-in-out",
           }}
         >
-          {images.map(
-            (
-              image,
-              index // Utiliza las imágenes recibidas como prop
-            ) => (
-              <div
-                key={index}
-                className="w-full h-full flex-shrink-0"
-                style={{
-                  backgroundImage: `url(${image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-            )
-          )}
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="w-full h-full flex-shrink-0"
+              style={{
+                backgroundImage: `url(${image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            />
+          ))}
         </div>
       </div>
 

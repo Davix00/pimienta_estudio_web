@@ -13,6 +13,8 @@ import {
   imagesClients,
   imagesColavorations,
 } from "../imagesPath";
+import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
     <div>
@@ -25,6 +27,7 @@ const App = () => {
       <ContactUs />
       <Info />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
