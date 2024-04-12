@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineLine } from "react-icons/ai";
 
 const Info = () => {

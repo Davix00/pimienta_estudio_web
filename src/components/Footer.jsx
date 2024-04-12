@@ -1,4 +1,3 @@
-import React from "react";
 import lucky from "../assets/logo/lucky.png";
 const Footer = () => {
   return (

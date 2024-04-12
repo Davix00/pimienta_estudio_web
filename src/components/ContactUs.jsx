@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
 import "./css/ContactUs.css";

@@ -2,6 +2,14 @@
   .carrusel-container {
     display: none !important;
   }
+
+  .about-container-parallax {
+    display: none !important;
+  }
+
+  .about-container {
+    display: block !important;
+  }
   .about {
     margin-top: 150px;
   }

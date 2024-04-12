@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import { ImageGrid } from "./Clients";
 import "./css/Clients.css";

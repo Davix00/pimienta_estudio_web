@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BsArrowUp } from "react-icons/bs";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Mostrar el botón cuando el usuario ha scrollado más allá de cierta posición
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
