@@ -26,7 +26,7 @@ const Services = () => {
               />
             </div>
             <p className="font-semibold text-slate-800 mt-2 text-center w-36">
-              Diseño de logotipo e identidad Gráfica
+              Diseño de logotipo e identidad gráfica
             </p>
           </div>
 
@@ -39,7 +39,7 @@ const Services = () => {
               />
             </div>
             <p className="font-semibold text-slate-800 mt-2 text-center w-36">
-              Impresión Digital y Offset
+              Impresión digital y offset
             </p>
           </div>
 
@@ -67,7 +67,7 @@ const Services = () => {
               />
             </div>
             <p className="font-semibold text-slate-800 mt-2 text-center w-36">
-              Páginas Web
+              Páginas web
             </p>
           </div>
 

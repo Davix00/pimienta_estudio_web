@@ -20,7 +20,7 @@ const Navbar = () => {
     { link: "Hecho en casa", path: "clients" },
     { link: "Colaboraciones", path: "collaborations" },
     { link: "Nuestros servicios", path: "services" },
-    { link: "Contactanos", path: "contact" },
+    { link: "Contáctanos", path: "contact" },
   ];
 
   return (

@@ -76,8 +76,8 @@ const Clients = ({ images }) => {
           className="text-center text-slate-600 p-5 md:max-w-4xl"
           style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.5rem" }}
         >
-          Nadie sabe lo que quiere hasta que se lo enseñas. Pues cuándo un
-          diseño se siente con el corazón, no importa lo que diga la cabeza.
+          Nadie sabe lo que quiere hasta que se lo enseñas. Cuando un diseño se
+          siente con el corazón, no importa lo que diga la cabeza.
         </div>
         <ImageGrid
           images={images}

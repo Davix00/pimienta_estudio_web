@@ -32,11 +32,11 @@ const About = () => {
               className="text-slate-600 p-3 md:mx-6 max-w-3xl"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
-              Somos una agencia de publicidad que, además de desarrollar
-              servicios de diseño gráfico, diseño de páginas web, marketing y
-              comunicación, somos impulsores de cambios que generen bien común.
-              Con un espíritu inconformista abierto a una nueva realidad más
-              humana y sostenible. Trabajamos en base a unos códigos éticos de
+              Somos una agencia de publicidad que desarrolla servicios de diseño
+              gráfico, diseño de páginas web, marketing y
+              comunicación.Impulsamos cambios que generan un bien común, con un
+              espíritu inconformista abierto a una nueva realidad más humana y
+              sostenible. Trabajamos con base a unos códigos éticos de
               honestidad y responsabilidad con las personas y el medio ambiente.
             </div>
 
@@ -79,12 +79,12 @@ const About = () => {
             className="text-slate-600 p-3 md:mx-6 max-w-3xl"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            Somos una agencia de publicidad que, además de desarrollar servicios
-            de diseño gráfico, diseño de páginas web, marketing y comunicación,
-            somos impulsores de cambios que generen bien común. Con un espíritu
-            inconformista abierto a una nueva realidad más humana y sostenible.
-            Trabajamos en base a unos códigos éticos de honestidad y
-            responsabilidad con las personas y el medio ambiente.
+            Somos una agencia de publicidad que desarrolla servicios de diseño
+            gráfico, diseño de páginas web, marketing y comunicación.Impulsamos
+            cambios que generan un bien común, con un espíritu inconformista
+            abierto a una nueva realidad más humana y sostenible. Trabajamos con
+            base a unos códigos éticos de honestidad y responsabilidad con las
+            personas y el medio ambiente.
           </div>
 
           <br />
