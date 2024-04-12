@@ -30,7 +30,7 @@ const Collaborations = ({ images }) => {
         </div>
         <div
           className="text-center text-slate-600 p-5 md:max-w-4xl"
-          style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.3rem" }}
+          style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.5rem" }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           expedita possimus ipsam nulla neque excepturi quo eius, autem laborum

@@ -74,10 +74,10 @@ const Clients = ({ images }) => {
         </div>
         <div
           className="text-center text-slate-600 p-5 md:max-w-4xl"
-          style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.3rem" }}
+          style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.5rem" }}
         >
           Nadie sabe lo que quiere hasta que se lo enseñas. Pues cuándo un
-          diseño no se siente con el corazón, no importa lo que diga la cabeza.
+          diseño se siente con el corazón, no importa lo que diga la cabeza.
         </div>
         <ImageGrid
           images={images}

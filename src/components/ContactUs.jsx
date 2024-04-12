@@ -44,14 +44,21 @@ const ContactUs = () => {
         <AiOutlineLine className="w-full" />
       </div>
 
-      <div className="italic text-center text-slate-600 p-5 md:max-w-4xl">
+      <div
+        className="text-center text-slate-600 p-5 md:max-w-4xl"
+        style={{ fontSize: "1.3rem" }}
+      >
         Mándanos un mensaje, estaremos felices de atenderte.
       </div>
 
       <div className="form-container mx-auto mt-12 md:w-full lg:max-w-4xl ">
         <form ref={form} onSubmit={sendEmail} className="ml-2 lg:ml-4">
           <div className="input-group flex flex-col md:flex-row">
-            <label htmlFor="nombre" className="input-label md:w-1/5">
+            <label
+              htmlFor="nombre"
+              className="input-label md:w-1/5"
+              style={{ fontSize: "1.3rem" }}
+            >
               Nombre:
             </label>
             <input
@@ -63,7 +70,11 @@ const ContactUs = () => {
             />
           </div>
           <div className="input-group flex flex-col md:flex-row">
-            <label htmlFor="email" className="input-label md:w-1/5">
+            <label
+              htmlFor="email"
+              className="input-label md:w-1/5"
+              style={{ fontSize: "1.3rem" }}
+            >
               Email:
             </label>
             <input
@@ -75,7 +86,11 @@ const ContactUs = () => {
             />
           </div>
           <div className="input-group flex flex-col md:flex-row">
-            <label htmlFor="mensaje" className="input-label md:w-1/5">
+            <label
+              htmlFor="mensaje"
+              className="input-label md:w-1/5"
+              style={{ fontSize: "1.3rem" }}
+            >
               Mensaje:
             </label>
             <textarea

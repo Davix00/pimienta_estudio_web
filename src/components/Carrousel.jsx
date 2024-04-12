@@ -5,7 +5,6 @@ import { RxDotFilled } from "react-icons/rx";
 const Carrousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Avanzar automáticamente al siguiente slide cada 3 segundos
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();

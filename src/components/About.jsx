@@ -1,18 +1,10 @@
 import { Parallax } from "react-parallax";
-import { useState, useEffect } from "react";
 import { AiOutlineLine } from "react-icons/ai";
 import lucky from "../assets/fondoParallax/lucky.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
 
 const About = () => {
-  const [infoPequenaVisible, setInfoPequenaVisible] = useState(false);
-
-  useEffect(() => {
-    const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
-    setInfoPequenaVisible(isMobileDevice);
-  }, []);
-
   return (
     <div className="about" id="about">
       <Parallax
