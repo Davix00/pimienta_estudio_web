@@ -32,7 +32,7 @@ const Collaborations = ({ images }) => {
           className="text-center text-slate-600 p-5 md:max-w-4xl"
           style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.5rem" }}
         >
-          Porque las grandes empresas dependes de otras mas grandes.
+          Porque las grandes empresas dependes de otras mas grandes. 3{" "}
         </div>
         <ImageGrid
           images={images}
