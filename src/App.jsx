@@ -11,7 +11,7 @@ import {
   imagesCarousel,
   imagesClients,
   imagesColavorations,
-} from "../imagesPath";
+} from "./imagesPath";
 import "./App.css";
 import ScrollToTop from "./components/ScrollToTop";
 const App = () => {

@@ -1,5 +1,5 @@
 import { AiOutlineLine } from "react-icons/ai";
-
+import luckyDePie from "../assets/info/lucky de pie.svg";
 const Info = () => {
   return (
     <div className="clientsContainer" id="clients">
@@ -7,8 +7,12 @@ const Info = () => {
         <div className="text-primary flex justify-center">
           <AiOutlineLine className="w-full" />
         </div>
+        \
+        <div className="p-5 md:max-w-4xl">
+          <img src={luckyDePie} alt="lucky de pie" />
+        </div>
         <div
-          className="text-center text-slate-600 p-5 md:max-w-4xl "
+          className="text-center text-slate-600 p-5 md:max-w-4xl"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           <div className="font-light mx-2">

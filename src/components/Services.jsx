@@ -1,9 +1,9 @@
 import { AiOutlineLine } from "react-icons/ai";
-import image1 from "../assets/services/1.png";
-import image2 from "../assets/services/2.jpg";
-import image3 from "../assets/services/3.jpg";
-import image4 from "../assets/services/4.png";
-import image5 from "../assets/services/5.png";
+import editorial from "../assets/services/EDITORIAL.svg";
+import identidad from "../assets/services/IDENTIDAD.svg";
+import medios from "../assets/services/MEDIOS.svg";
+import offset from "../assets/services/OFFSET.svg";
+import web from "../assets/services/WEB.svg";
 
 const Services = () => {
   return (
@@ -21,7 +21,7 @@ const Services = () => {
             <div className="rounded-full overflow-hidden h-24 w-24 border-4 flex items-center justify-center">
               <img
                 className="rounded-full w-full h-full object-cover"
-                src={image1}
+                src={identidad}
                 alt="Imagen de servicio"
               />
             </div>
@@ -34,7 +34,7 @@ const Services = () => {
             <div className="rounded-full overflow-hidden h-24 w-24 border-4 flex items-center justify-center">
               <img
                 className="rounded-full w-full h-full object-cover"
-                src={image2}
+                src={offset}
                 alt="Imagen de servicio"
               />
             </div>
@@ -47,7 +47,7 @@ const Services = () => {
             <div className="rounded-full overflow-hidden h-24 w-24 border-4 flex items-center justify-center">
               <img
                 className="rounded-full w-full h-full object-cover"
-                src={image3}
+                src={editorial}
                 alt="Imagen de servicio"
               />
             </div>
@@ -62,7 +62,7 @@ const Services = () => {
             <div className="rounded-full overflow-hidden h-24 w-24 border-4 flex items-center justify-center">
               <img
                 className="rounded-full w-full h-full object-cover"
-                src={image4}
+                src={web}
                 alt="Imagen de servicio"
               />
             </div>
@@ -75,7 +75,7 @@ const Services = () => {
             <div className="rounded-full overflow-hidden h-24 w-24 border-4 flex items-center justify-center">
               <img
                 className="rounded-full w-full h-full object-cover"
-                src={image5}
+                src={medios}
                 alt="Imagen de servicio"
               />
             </div>

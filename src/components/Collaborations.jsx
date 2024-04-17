@@ -32,10 +32,7 @@ const Collaborations = ({ images }) => {
           className="text-center text-slate-600 p-5 md:max-w-4xl"
           style={{ fontFamily: "Poppins, sans-serif", fontSize: "1.5rem" }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          expedita possimus ipsam nulla neque excepturi quo eius, autem laborum
-          tenetur ad magnam fugiat? Veniam, sapiente natus consequuntur voluptas
-          et eligendi!.
+          Porque las grandes empresas dependes de otras mas grandes.
         </div>
         <ImageGrid
           images={images}
