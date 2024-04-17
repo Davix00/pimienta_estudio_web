@@ -15,7 +15,7 @@ const Footer = () => {
             className="italic font-bold text-white text-2xl lg:text-5xl lg:ml-0 lg:mr-auto sm:ml-32"
             style={{ marginLeft: "1rem" }}
           >
-            LUCKY STORE
+            LUCKYSTORE
           </span>
           <span className="w-60 ml-auto mt-4 lg:mt-0">
             <img src={lucky} alt="logo" />

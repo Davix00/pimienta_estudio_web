@@ -21,7 +21,7 @@ const ContactUs = () => {
           form.current.reset();
         },
         (error) => {
-          setModalMessage("Error, intenta de nuevo más tarde.");
+          setModalMessage("Error, intenta más tarde.");
           setModalVisible(true);
         }
       );
@@ -67,6 +67,9 @@ const ContactUs = () => {
               name="user_name"
               required
               className="input-field md:w-4/5"
+              maxLength="50"
+              pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$"
+              title="Solo se permiten letras y espacios"
             />
           </div>
           <div className="input-group flex flex-col md:flex-row">
@@ -83,6 +86,9 @@ const ContactUs = () => {
               name="user_email"
               required
               className="input-field md:w-4/5"
+              maxLength="50"
+              title="Solo se 50 caracteres"
+              pattern="^[^<>]*$"
             />
           </div>
           <div className="input-group flex flex-col md:flex-row">
@@ -99,6 +105,8 @@ const ContactUs = () => {
               rows="4"
               required
               className="input-field md:w-4/5"
+              pattern="^[^<>]*$"
+              maxLength="200"
             />
           </div>
           <button

@@ -23,6 +23,9 @@ const Navbar = () => {
     { link: "Contáctanos", path: "contact" },
   ];
 
+  const goToHomePage = () => {
+    window.location.href = "../../index.html";
+  };
   return (
     <nav
       style={{
@@ -37,7 +40,7 @@ const Navbar = () => {
       <div className="bg-white h-10vh flex justify-between z-50  text-primary lg:py-3 px-3 py-4 flex-1">
         <div className="flex items-center flex-1">
           {/**Logo */}
-          <span className="w-60 -mt-4 lg:w-60 sm:w-40 ">
+          <span className="w-60 -mt-4 lg:w-60 sm:w-40 " onClick={goToHomePage}>
             <img src={logoVerde} alt="logo" />
           </span>
         </div>
